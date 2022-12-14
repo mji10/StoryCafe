@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC/Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Owl carousel cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4647efb575.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assests\favicon\apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assests\favicon\apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assests\favicon\apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assests\favicon\apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assests\favicon\apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assests\favicon\apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assests\favicon\apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assests\favicon\apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assests\favicon\apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assests\favicon\android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assests\favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assests\favicon\favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assests\favicon\favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <main>
+        <div id="overlay">
+            <a href="index.html">Home</a>
+            <a href="index.html#cafe_about">About us</a>
+            <a href="menu.html">Menu</a>
+            <a href="index.html#cafe_book_table">Book a table</a>
+        </div>
+        <div class="navi">
+            <div class="logo"><img src="assests\homepage_images\logo\logo.png" alt=""></div>
+            <div id="hamburger">
+                <div></div>
+            </div>
+        </div>
+    </main>
+    <section id="hero_section">
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>OUR GALLERY</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h1>Gallery</h1>
+        <div class="gallery_images">
+            <img src="assests\gallery\G1.jpg" alt="">
+            <img src="assests\gallery\G2.jpg" alt="">
+            <img src="assests\gallery\G3.jpg" alt="">
+            <img src="assests\gallery\G4.jpg" alt="">
+            <img src="assests\gallery\G5.jpg" alt="">
+            <img src="assests\gallery\G6.jpg" alt="">
+            <img src="assests\gallery\G7.jpg" alt="">
+            <img src="assests\gallery\G8.jpg" alt="">
+            <img src="assests\gallery\G9.jpg" alt="">
+            <img src="assests\gallery\G10.jpg" alt="">
+            <img src="assests\gallery\G11.jpg" alt="">
+            <img src="assests\gallery\G12.jpg" alt="">
+        </div>
+
+    </section>
+
+
+    <section id="footer">
+        <div class="footer_content">
+            <p>Copyright @2022| STORY CAFE</p>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Navbar on scroll js -->
+    <script src="navbar.js"></script>
+    <!-- navbar bar script function -->
+    <script>
+        const nav = document.querySelector('.nav');
+        let navTop = nav.offsetTop;
+
+        function fixedNav() {
+            if (window.scrollY) {
+                nav.classList.add('fixed');
+            } else {
+                nav.classList.remove('fixed');
+            }
+        }
+
+        window.addEventListener('scroll', fixedNav);
+    </script>
+
+    <!-- jquery script link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Owl carousel script link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Owl carousel function -->
+    <script>
+        (function () {
+            "use strict";
+
+            var carousels = function () {
+                $(".owl-carousel1").owlCarousel({
+                    loop: true,
+                    center: true,
+                    margin: 0,
+                    responsiveClass: true,
+                    nav: false,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: false
+                        },
+                        680: {
+                            items: 2,
+                            nav: false,
+                            loop: false
+                        },
+                        1000: {
+                            items: 3,
+                            nav: true
+                        }
+                    }
+                });
+            };
+
+            (function ($) {
+                carousels();
+            })(jQuery);
+        })();
+    </script>
+
+
+</body>
+
+</html>
